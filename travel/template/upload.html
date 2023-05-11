@@ -1,0 +1,46 @@
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="fw-bold">Image CRUD in Django</h1>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Descritpion</th>
+                                    <th>Price</th>
+                                    <th>Image</th>
+                                    <th>Image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                                    <tr>
+                                        <td>{{ p.id }} </td>
+                                        <td>{{ p.name }} </td>
+                                        <td>{{ p.description }} </td>
+                                        <td>{{ p.price }} </td>
+                                        
+                                            <td>
+                                                <img src="{{ tex.image.url }}" alt="" class="prod-size">
+                                            </td>
+                                        
+                                        <td>
+                                            <a href="#" class="btn btn-success badge">EDIT</a>
+                                            <a href="#" class="btn btn-danger badge">Delete</a>
+                                        </td>
+                                    </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

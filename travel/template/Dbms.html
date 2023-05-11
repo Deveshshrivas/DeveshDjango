@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dbms.css">
+</head>
+
+<body>
+    <h1 class = "name">Dbms </h1>
+    <div class="Nav "></div>
+    <div class="Bo">
+        <h2>DDL Command</h2>
+        <p>The DDL Commands in Structured Query Language are used to create and modify the schema of the database and
+            its objects. The syntax of DDL commands is predefined for describing the data. The commands of Data
+            Definition Language deal with how the data should exist in the database.
+        </p>
+        <li>CREATE Command</li>
+        <li>DROP Command</li>
+        <li>ALTER Command</li>
+        <li>TRUNCATE Command</li>
+        <li>RENAME Command</li>
+        <br>
+        <h2>CREATE Command</h2>
+        
+        <p>CREATE is a DDL command used to create databases, tables, triggers and other database objects.</p>
+        <br>
+        <ul>CREATE Database Database_Name; </ul>
+        <br>
+        <ul>CREATE TABLE table_name
+            (
+            column_Name1 data_type ( size of the column ) ,
+            column_Name2 data_type ( size of the column) ,
+            column_Name3 data_type ( size of the column) ,
+            ...
+            column_NameN data_type ( size of the column )
+            ) ; </ul>
+        <br>
+        <ul>CREATE INDEX Name_of_Index ON Name_of_Table (column_name_1 , column_name_2 , … . , column_name_N);
+        </ul>
+        <br>
+        <ul>CREATE TRIGGER [trigger_name]
+            [ BEFORE | AFTER ]
+            { INSERT | UPDATE | DELETE }
+            ON [table_name] ; </ul>
+        <br>
+        <h2>DROP Command</h2>
+        <p>DROP is a DDL command used to delete/remove the database objects from the SQL database. We can easily remove
+            the entire table, view, or index from the database using this DDL command.</p>
+        <br>
+        <ul>DROP DATABASE Database_Name;  </ul>
+        <br>
+        <ul>DROP TABLE Table_Name;  </ul>
+        <br>
+        <ul>DROP INDEX Index_Name; </ul>
+        <br>
+        <h2>ALTER Command</h2>
+        <p>ALTER is a DDL command which changes or modifies the existing structure of the database, and it also changes the schema of database objects
+            <br>
+            We can also add and drop constraints of the table using the ALTER command.</p>
+        <br>
+        <ul>ALTER TABLE name_of_table ADD column_name column_definition;  </ul>
+        <br>
+        <ul>ALTER TABLE name_of_table DROP Column_Name_1 , column_Name_2 , ….., column_Name_N;        </ul>
+        <br>
+        <ul>ALTER TABLE table_name MODIFY ( column_name column_datatype(size));        </ul>
+        <br>
+        <h2>TRUNCATE Command</h2>
+        <p>TRUNCATE is another DDL command which deletes or removes all the records from the table.
+            <br>
+            This command also removes the space allocated for storing the table records.
+            
+            </p>
+        <br>
+        <ul>TRUNCATE TABLE Table_Name;  </ul>
+        <br>
+        <h2>RENAME Command</h2>
+        <p>RENAME is a DDL command which is used to change the name of the database table.
+
+        </p>
+        <br>
+        <ul>RENAME TABLE Old_Table_Name TO New_Table_Name;  </ul>
+
+    </div>
+</body>
+
+</html>
