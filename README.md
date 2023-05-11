@@ -1,0 +1,2 @@
+# DeveshDjango
+ just fun
